@@ -1,0 +1,13 @@
+ASSERTION	AAMEAAEBBgAAAAAAAECPQA==
+ASSERTION	AAMDAAMCAJqZmZmZ+VhA
+RUN	gatling.simulation.TradingSimulation		tradingsimulation	1532251765636	 	2.0
+USER	Trading	1	START	1532251766419	1532251766419
+REQUEST	Trading	1		POST /api/front/v1/signup	1532251766450	1532251766787	OK	 
+REQUEST	Trading	1		GET http://localhost:3001/api/front/v1/activate-account	1532251766860	1532251766872	OK	 
+REQUEST	Trading	1		POST http://localhost:3001//api/front/v1/login	1532251766874	1532251766882	KO	status.find.is(200), but actually found 404
+GROUP	Failed to build request GET /api/v1/front/trading/market/buy: No attribute named 'client-key' is defined 	1532251766907
+GROUP	Failed to build request GET /api/v1/front/trading/limit/buy: No attribute named 'client-key' is defined 	1532251767873
+GROUP	Failed to build request GET /api/v1/front/trading/limit/buy: No attribute named 'client-key' is defined 	1532251768902
+GROUP	Failed to build request GET /api/v1/front/trading/market/buy: No attribute named 'client-key' is defined 	1532251769932
+GROUP	Failed to build request GET /api/v1/front/trading/market/buy: No attribute named 'client-key' is defined 	1532251770932
+USER	Trading	1	END	1532251766419	1532251771947

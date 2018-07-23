@@ -1,0 +1,13 @@
+ASSERTION	AAMEAAEBBgAAAAAAAECPQA==
+ASSERTION	AAMDAAMCAJqZmZmZ+VhA
+RUN	gatling.simulation.TradingSimulation		tradingsimulation	1532091380828	 	2.0
+USER	Reports	1	START	1532091381582	1532091381582
+REQUEST	Reports	1		POST http://localhost:3001/api/front/v1/signup	1532091381618	1532091381898	OK	 
+REQUEST	Reports	1		GET http://localhost:3001/api/front/v1/activate-account	1532091381955	1532091381960	OK	 
+REQUEST	Reports	1		POST http://localhost:3001/api/front/v1/login	1532091381963	1532091382229	OK	 
+REQUEST	Reports	1		GET /api/v1/front/trading/limit/sell/500/40	1532091382236	1532091382245	OK	 
+REQUEST	Reports	1		GET /api/v1/front/trading/limit/sell/500/40	1532091383208	1532091383227	OK	 
+REQUEST	Reports	1		GET /api/v1/front/trading/limit/sell/500/40	1532091384238	1532091384256	OK	 
+REQUEST	Reports	1		GET /api/v1/front/trading/limit/sell/500/40	1532091385287	1532091385308	OK	 
+REQUEST	Reports	1		GET /api/v1/front/trading/limit/sell/500/40	1532091386337	1532091386356	OK	 
+USER	Reports	1	END	1532091381582	1532091387364

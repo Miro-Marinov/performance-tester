@@ -1,0 +1,317 @@
+{
+  "type": "GROUP",
+"name": "Global Information",
+"path": "",
+"pathFormatted": "group_missing-name-b06d1",
+"stats": {
+    "name": "Global Information",
+    "numberOfRequests": {
+        "total": 3,
+        "ok": 1,
+        "ko": 2
+    },
+    "minResponseTime": {
+        "total": 2,
+        "ok": 286,
+        "ko": 2
+    },
+    "maxResponseTime": {
+        "total": 286,
+        "ok": 286,
+        "ko": 267
+    },
+    "meanResponseTime": {
+        "total": 185,
+        "ok": 286,
+        "ko": 135
+    },
+    "standardDeviation": {
+        "total": 130,
+        "ok": 0,
+        "ko": 133
+    },
+    "percentiles1": {
+        "total": 267,
+        "ok": 286,
+        "ko": 135
+    },
+    "percentiles2": {
+        "total": 277,
+        "ok": 286,
+        "ko": 201
+    },
+    "percentiles3": {
+        "total": 284,
+        "ok": 286,
+        "ko": 254
+    },
+    "percentiles4": {
+        "total": 286,
+        "ok": 286,
+        "ko": 264
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 1,
+        "percentage": 33
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 2,
+        "percentage": 67
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.5,
+        "ok": 0.16666666666666666,
+        "ko": 0.3333333333333333
+    }
+},
+"contents": {
+"req_post-http---loc-0765e": {
+        "type": "REQUEST",
+        "name": "POST http://localhost:3001/api/front/v1/signup",
+"path": "POST http://localhost:3001/api/front/v1/signup",
+"pathFormatted": "req_post-http---loc-0765e",
+"stats": {
+    "name": "POST http://localhost:3001/api/front/v1/signup",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 1,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 286,
+        "ok": 286,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 286,
+        "ok": 286,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 286,
+        "ok": 286,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 286,
+        "ok": 286,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 286,
+        "ok": 286,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 286,
+        "ok": 286,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 286,
+        "ok": 286,
+        "ko": 0
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 1,
+        "percentage": 100
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 0,
+        "percentage": 0
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.16666666666666666,
+        "ok": 0.16666666666666666,
+        "ko": 0
+    }
+}
+    },"req_get-http---loca-25782": {
+        "type": "REQUEST",
+        "name": "GET http://localhost:3001/api/front/v1/activate-account",
+"path": "GET http://localhost:3001/api/front/v1/activate-account",
+"pathFormatted": "req_get-http---loca-25782",
+"stats": {
+    "name": "GET http://localhost:3001/api/front/v1/activate-account",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 0,
+        "ko": 1
+    },
+    "minResponseTime": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "maxResponseTime": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "meanResponseTime": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "percentiles2": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "percentiles3": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "percentiles4": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 1,
+        "percentage": 100
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.16666666666666666,
+        "ok": 0,
+        "ko": 0.16666666666666666
+    }
+}
+    },"req_post-http---loc-f31e6": {
+        "type": "REQUEST",
+        "name": "POST http://localhost:3001/api/front/v1/login",
+"path": "POST http://localhost:3001/api/front/v1/login",
+"pathFormatted": "req_post-http---loc-f31e6",
+"stats": {
+    "name": "POST http://localhost:3001/api/front/v1/login",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 0,
+        "ko": 1
+    },
+    "minResponseTime": {
+        "total": 267,
+        "ok": 0,
+        "ko": 267
+    },
+    "maxResponseTime": {
+        "total": 267,
+        "ok": 0,
+        "ko": 267
+    },
+    "meanResponseTime": {
+        "total": 267,
+        "ok": 0,
+        "ko": 267
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 267,
+        "ok": 0,
+        "ko": 267
+    },
+    "percentiles2": {
+        "total": 267,
+        "ok": 0,
+        "ko": 267
+    },
+    "percentiles3": {
+        "total": 267,
+        "ok": 0,
+        "ko": 267
+    },
+    "percentiles4": {
+        "total": 267,
+        "ok": 0,
+        "ko": 267
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 1,
+        "percentage": 100
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.16666666666666666,
+        "ok": 0,
+        "ko": 0.16666666666666666
+    }
+}
+    }
+}
+
+}

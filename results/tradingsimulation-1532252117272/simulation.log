@@ -1,0 +1,15 @@
+ASSERTION	AAMEAAEBBgAAAAAAAECPQA==
+ASSERTION	AAMDAAMCAJqZmZmZ+VhA
+RUN	gatling.simulation.TradingSimulation		tradingsimulation	1532252117272	 	2.0
+USER	Trading	1	START	1532252118088	1532252118088
+REQUEST	Trading	1		POST /api/front/v1/signup	1532252118123	1532252118405	OK	 
+REQUEST	Trading	1		GET /api/front/v1/activate-account	1532252118461	1532252118467	OK	 
+REQUEST	Trading	1		POST /api/front/v1/login	1532252118470	1532252118738	OK	 
+REQUEST	Trading	1		GET /api/v1/front/trading/limit/sell	1532252118747	1532252118861	OK	 
+REQUEST	Trading	1		GET /api/v1/front/trading/limit/sell	1532252119818	1532252119893	OK	 
+REQUEST	Trading	1		GET /api/v1/front/trading/market/sell	1532252120928	1532252120962	KO	jsonPath($.message).find.is(Sell Order added), but actually found Cannot execute order, buy book empty
+REQUEST	Trading	1		GET /api/v1/front/trading/market/sell	1532252121997	1532252122029	KO	jsonPath($.message).find.is(Sell Order added), but actually found Cannot execute order, buy book empty
+REQUEST	Trading	1		GET /api/v1/front/trading/limit/sell	1532252123057	1532252123138	OK	 
+REQUEST	Trading	1		GET /api/v1/front/trading/market/sell	1532252124148	1532252124204	KO	jsonPath($.message).find.is(Sell Order added), but actually found Cannot execute order, buy book empty
+REQUEST	Trading	1		GET /api/v1/front/trading/market/sell	1532252125227	1532252125257	KO	jsonPath($.message).find.is(Sell Order added), but actually found Cannot execute order, buy book empty
+USER	Trading	1	END	1532252118088	1532252126263

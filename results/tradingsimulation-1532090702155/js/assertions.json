@@ -1,0 +1,27 @@
+{
+  "simulation": "gatling.simulation.TradingSimulation",
+  "simulationId": "tradingsimulation",
+  "start": 1532090702155,
+  "description": "",
+  "scenarios": ["Reports"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [1000.0],
+  "result": true,
+  "message": "Global: max of response time is less than 1000.0",
+  "actualValue": [286.0]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful requests",
+  "condition": "is greater than",
+  "expectedValues": [99.9],
+  "result": false,
+  "message": "Global: percentage of successful requests is greater than 99.9",
+  "actualValue": [33.33333333333333]
+}
+  ]
+}

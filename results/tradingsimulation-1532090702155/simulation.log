@@ -1,0 +1,8 @@
+ASSERTION	AAMEAAEBBgAAAAAAAECPQA==
+ASSERTION	AAMDAAMCAJqZmZmZ+VhA
+RUN	gatling.simulation.TradingSimulation		tradingsimulation	1532090702155	 	2.0
+USER	Reports	1	START	1532090702990	1532090702990
+REQUEST	Reports	1		POST http://localhost:3001/api/front/v1/signup	1532090703033	1532090703319	OK	 
+REQUEST	Reports	1		GET http://localhost:3001/api/front/v1/activate-account	1532090703377	1532090703379	KO	status.find.is(200), but actually found 404
+REQUEST	Reports	1		POST http://localhost:3001/api/front/v1/login	1532090703390	1532090703657	KO	jsonPath($.data.token).find.exists, found nothing
+USER	Reports	1	END	1532090702990	1532090708674

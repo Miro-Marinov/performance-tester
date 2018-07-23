@@ -1,0 +1,473 @@
+{
+  "type": "GROUP",
+"name": "Global Information",
+"path": "",
+"pathFormatted": "group_missing-name-b06d1",
+"stats": {
+    "name": "Global Information",
+    "numberOfRequests": {
+        "total": 8,
+        "ok": 3,
+        "ko": 5
+    },
+    "minResponseTime": {
+        "total": 6,
+        "ok": 6,
+        "ko": 9
+    },
+    "maxResponseTime": {
+        "total": 289,
+        "ok": 289,
+        "ko": 24
+    },
+    "meanResponseTime": {
+        "total": 80,
+        "ok": 186,
+        "ko": 16
+    },
+    "standardDeviation": {
+        "total": 113,
+        "ok": 128,
+        "ko": 6
+    },
+    "percentiles1": {
+        "total": 19,
+        "ok": 262,
+        "ko": 17
+    },
+    "percentiles2": {
+        "total": 84,
+        "ok": 276,
+        "ko": 21
+    },
+    "percentiles3": {
+        "total": 280,
+        "ok": 286,
+        "ko": 23
+    },
+    "percentiles4": {
+        "total": 287,
+        "ok": 288,
+        "ko": 24
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 3,
+        "percentage": 38
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 5,
+        "percentage": 63
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 1.3333333333333333,
+        "ok": 0.5,
+        "ko": 0.8333333333333334
+    }
+},
+"contents": {
+"req_post-http---loc-0765e": {
+        "type": "REQUEST",
+        "name": "POST http://localhost:3001/api/front/v1/signup",
+"path": "POST http://localhost:3001/api/front/v1/signup",
+"pathFormatted": "req_post-http---loc-0765e",
+"stats": {
+    "name": "POST http://localhost:3001/api/front/v1/signup",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 1,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 289,
+        "ok": 289,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 289,
+        "ok": 289,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 289,
+        "ok": 289,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 289,
+        "ok": 289,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 289,
+        "ok": 289,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 289,
+        "ok": 289,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 289,
+        "ok": 289,
+        "ko": 0
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 1,
+        "percentage": 100
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 0,
+        "percentage": 0
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.16666666666666666,
+        "ok": 0.16666666666666666,
+        "ko": 0
+    }
+}
+    },"req_get-http---loca-25782": {
+        "type": "REQUEST",
+        "name": "GET http://localhost:3001/api/front/v1/activate-account",
+"path": "GET http://localhost:3001/api/front/v1/activate-account",
+"pathFormatted": "req_get-http---loca-25782",
+"stats": {
+    "name": "GET http://localhost:3001/api/front/v1/activate-account",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 1,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 6,
+        "ok": 6,
+        "ko": 0
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 1,
+        "percentage": 100
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 0,
+        "percentage": 0
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.16666666666666666,
+        "ok": 0.16666666666666666,
+        "ko": 0
+    }
+}
+    },"req_post-http---loc-f31e6": {
+        "type": "REQUEST",
+        "name": "POST http://localhost:3001/api/front/v1/login",
+"path": "POST http://localhost:3001/api/front/v1/login",
+"pathFormatted": "req_post-http---loc-f31e6",
+"stats": {
+    "name": "POST http://localhost:3001/api/front/v1/login",
+    "numberOfRequests": {
+        "total": 1,
+        "ok": 1,
+        "ko": 0
+    },
+    "minResponseTime": {
+        "total": 262,
+        "ok": 262,
+        "ko": 0
+    },
+    "maxResponseTime": {
+        "total": 262,
+        "ok": 262,
+        "ko": 0
+    },
+    "meanResponseTime": {
+        "total": 262,
+        "ok": 262,
+        "ko": 0
+    },
+    "standardDeviation": {
+        "total": 0,
+        "ok": 0,
+        "ko": 0
+    },
+    "percentiles1": {
+        "total": 262,
+        "ok": 262,
+        "ko": 0
+    },
+    "percentiles2": {
+        "total": 262,
+        "ok": 262,
+        "ko": 0
+    },
+    "percentiles3": {
+        "total": 262,
+        "ok": 262,
+        "ko": 0
+    },
+    "percentiles4": {
+        "total": 262,
+        "ok": 262,
+        "ko": 0
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 1,
+        "percentage": 100
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 0,
+        "percentage": 0
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.16666666666666666,
+        "ok": 0.16666666666666666,
+        "ko": 0
+    }
+}
+    },"req_get--api-v1-fro-47e53": {
+        "type": "REQUEST",
+        "name": "GET /api/v1/front/trading/limit/buy",
+"path": "GET /api/v1/front/trading/limit/buy",
+"pathFormatted": "req_get--api-v1-fro-47e53",
+"stats": {
+    "name": "GET /api/v1/front/trading/limit/buy",
+    "numberOfRequests": {
+        "total": 3,
+        "ok": 0,
+        "ko": 3
+    },
+    "minResponseTime": {
+        "total": 9,
+        "ok": 0,
+        "ko": 9
+    },
+    "maxResponseTime": {
+        "total": 24,
+        "ok": 0,
+        "ko": 24
+    },
+    "meanResponseTime": {
+        "total": 18,
+        "ok": 0,
+        "ko": 18
+    },
+    "standardDeviation": {
+        "total": 6,
+        "ok": 0,
+        "ko": 6
+    },
+    "percentiles1": {
+        "total": 21,
+        "ok": 0,
+        "ko": 21
+    },
+    "percentiles2": {
+        "total": 23,
+        "ok": 0,
+        "ko": 23
+    },
+    "percentiles3": {
+        "total": 24,
+        "ok": 0,
+        "ko": 24
+    },
+    "percentiles4": {
+        "total": 24,
+        "ok": 0,
+        "ko": 24
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 3,
+        "percentage": 100
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.5,
+        "ok": 0,
+        "ko": 0.5
+    }
+}
+    },"req_get--api-v1-fro-36d2c": {
+        "type": "REQUEST",
+        "name": "GET /api/v1/front/trading/market/buy",
+"path": "GET /api/v1/front/trading/market/buy",
+"pathFormatted": "req_get--api-v1-fro-36d2c",
+"stats": {
+    "name": "GET /api/v1/front/trading/market/buy",
+    "numberOfRequests": {
+        "total": 2,
+        "ok": 0,
+        "ko": 2
+    },
+    "minResponseTime": {
+        "total": 9,
+        "ok": 0,
+        "ko": 9
+    },
+    "maxResponseTime": {
+        "total": 17,
+        "ok": 0,
+        "ko": 17
+    },
+    "meanResponseTime": {
+        "total": 13,
+        "ok": 0,
+        "ko": 13
+    },
+    "standardDeviation": {
+        "total": 4,
+        "ok": 0,
+        "ko": 4
+    },
+    "percentiles1": {
+        "total": 13,
+        "ok": 0,
+        "ko": 13
+    },
+    "percentiles2": {
+        "total": 15,
+        "ok": 0,
+        "ko": 15
+    },
+    "percentiles3": {
+        "total": 17,
+        "ok": 0,
+        "ko": 17
+    },
+    "percentiles4": {
+        "total": 17,
+        "ok": 0,
+        "ko": 17
+    },
+    "group1": {
+        "name": "t < 500 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group2": {
+        "name": "500 ms < t < 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group3": {
+        "name": "t > 1000 ms",
+        "count": 0,
+        "percentage": 0
+    },
+    "group4": {
+        "name": "failed",
+        "count": 2,
+        "percentage": 100
+    },
+    "meanNumberOfRequestsPerSecond": {
+        "total": 0.3333333333333333,
+        "ok": 0,
+        "ko": 0.3333333333333333
+    }
+}
+    }
+}
+
+}
