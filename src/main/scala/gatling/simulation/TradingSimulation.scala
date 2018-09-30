@@ -8,7 +8,7 @@ class TradingSimulation extends Simulation {
 
   setUp(
     scenario("Trading")
-      .exec(SetUp.newUser)
+      .exec(SetUp.signInScenario)
       .exec(Trading.trade(runDurationSecs, pauseDurationSecs))
       .inject(atOnceUsers(users))
   )

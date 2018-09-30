@@ -16,10 +16,15 @@ import scala.util.{Failure, Success}
 object Main extends App {
   val logger = LoggerFactory.getLogger(getClass)
   val gatlingResultsDir = ConfigFactory.load().getString("gatling.resultsFolder")
+  val runMode = ConfigFactory.load().getString("general.mode")
 
   def runGatling(): Unit = {
     val props = new GatlingPropertiesBuilder
-    props.simulationClass("gatling.simulation.TradingSimulation")
+    runMode match {
+      case "trading" => props.simulationClass("gatling.simulation.TradingSimulation")
+      case _ => props.simulationClass("gatling.simulation.SetupSimulation")
+    }
+
     props.resultsDirectory(gatlingResultsDir)
     // Run the gatling simulation.
     Gatling.fromMap(props.build)

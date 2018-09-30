@@ -16,15 +16,22 @@ object SetUp {
     "Content-Type" -> """application/json"""
   )
 
-  val userNames: Iterator[Map[String, String]] = Iterator.continually(
-    // Random number will be accessible in session under variable "OrderRef"
-    Map("userName" -> UUID.randomUUID().toString)
-  )
+  val userNames: Iterator[Map[String, String]] = {
+    val seq: Iterator[Int] = Iterator.from(1)
 
-  val newUser: ScenarioBuilder = scenario("Register, Activate & Sign-up")
+    Iterator.continually(
+      // Random number will be accessible in session under variable "OrderRef"
+      Map("userName" -> s"finraxUser${seq.next()}")
+    )
+  }
+
+  val registerAndActivateScenario: ScenarioBuilder = scenario("Register & Activate")
     .feed(userNames)
     .exec(signup)
-    .exec(activate)
+//    .exec(activate) // This is done via e-mail now
+
+  val signInScenario: ScenarioBuilder = scenario("Sign-In")
+    .feed(userNames)
     .exec(signIn)
 
   private lazy val signup: ChainBuilder =
@@ -35,9 +42,8 @@ object SetUp {
         .disableFollowRedirect
         .headers(commonHeaders)
         .check(
-          status.is(200),
-          jsonPath("$.data.token").saveAs("access-token"),
-          jsonPath("$.data.user.verification_token").saveAs("verification-token")
+          status.is(200)
+//          jsonPath("$.data.user.verification_token").saveAs("verification-token")
         )
     )
 

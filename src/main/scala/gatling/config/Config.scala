@@ -15,16 +15,12 @@ object Config {
   val pauseDurationSecs: Int = config.getInt("general.pauseDurationSecs")
   val runDurationSecs: Int = config.getInt("general.runDurationSecs")
   val users: Int = config.getInt("general.users")
+  val mode: String = config.getString("general.mode")
 
   val gatlingResultsDir: String = config.getString("gatling.resultsFolder")
   val awsRegion: String = config.getString("aws.region")
   val awsBucket: String = config.getString("aws.s3.bucket")
   val awsKey: String = config.getString("aws.s3.key")
-
-  val reports: List[String] = Option(config.getString("mosquito.reports"))
-    .filterNot(_.isEmpty)
-    .map(_.trim.split("\\s*\\|\\s*").toList)
-    .getOrElse(config.getStringList("mosquito.defaultReports").asScala.toList)
 
   val httpConfig: HttpProtocolBuilder = http
     .baseURL(baseUrl)

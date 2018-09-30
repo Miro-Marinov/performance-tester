@@ -1,8 +1,0 @@
-<testsuite name="gatling.simulation.TradingSimulation" tests="2" errors="0" failures="1" time="0">
-<testcase name="Global: max of response time is less than 1000.0" status="true" time="0">
-  <system-out>Global: max of response time is less than 1000.0</system-out>
-</testcase>
-<testcase name="Global: percentage of successful requests is greater than 99.9" status="false" time="0">
-  <failure type="Global">Actual value: 66.66666666666666</failure>
-</testcase>
-</testsuite>
